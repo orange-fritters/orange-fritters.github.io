@@ -1,0 +1,57 @@
+title: Coffee Overflow #Your awesome title
+email: mindongss@snu.ac.kr #youremail@domain.com
+description: > # this means to ignore newlines until "baseurl"
+  Welcome to my AI Study Archive, focused on AI paper reviews, providing my own insights into AI research. Visit my blog, exploring the evolving world of AI.
+
+
+baseurl: # the subpath of the site
+url: http://orange-fritters.github.io/ # the base hostname & protocol for your site
+
+permalink: /:year-:month/:title
+timezone:
+
+favicon: /assets/img/favicon.ico
+
+images: /_posts/attachment
+
+google_analytics: #UA—XXXXXXXX-X
+disqus_shortname: #disqus shortname
+cusdis:
+  app_id: #your cusdis app_id
+
+user:
+  name: Orange Fritters
+  pic: /assets/img/profile.jpeg
+  picAlt: "orange"
+  job: AI Enthusiast
+  aboutme: true # comment this out if you don't need the 'about' page.
+
+exclude:
+  - README.md
+  - LICENSE
+  - github
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comment: true
+
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown
+kramdown:
+  math_engine: katex
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future: false
+unpublished: false
+
+# Mathematics
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false

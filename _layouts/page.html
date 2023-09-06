@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %} {% if page.use_math %} {% include
+    mathjax_support.html %} {% endif %}
+  </head>
+  <body>
+    <div class="content">
+      {% include header.html %} {% include mobile_menu.html %}
+
+      <main class="main">{{ content }}</main>
+    </div>
+
+    {% include footer.html %} {% include js.html %}
+  </body>
+</html>
